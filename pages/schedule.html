@@ -1,0 +1,964 @@
+<html><head>
+    <meta charset = "UTF-8" />
+    <title>Parakeet Airways – Schedule</title>
+    <link rel="icon" href="../images/tinypara.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+    <script src="../javascript/wow.min.js"></script>
+    <script src="../javascript/modernizr.js"></script>
+    <script src="../javascript/messyschedulemodals.js"></script>
+    <script src="../javascript/toucheffects.js"></script>
+    <link href="../font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../coolcss.css">
+  </head><body>
+    <!--CSS Spinner-->
+    <div class="se-pre-con-wrapper">
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-ex-collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img height="25" alt="Parakeet Airways Logo" src="../images/parakeetbanner.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right navvy">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us<img src="../images/dropdown.png" width="10" height="10"></a>
+              <ul class="dropdown-menu" role="menu" alt="Dropdown menu button">
+                <li>
+                  <a href="aboutus.html">About Us</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Flights<img src="../images/dropdown.png" width="10" height="10"></a>
+              <ul class="dropdown-menu" role="menu" alt="Dropdown menu button">
+                <li>
+                  <a href="schedule.html">Schedule and Booking</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="food.html">Food Options</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="frequentflyers.html">Frequent Flyers</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="jobs.html">Jobs</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<img src="../images/dropdown.png" width="10" height="10"></a>
+              <ul class="dropdown-menu" role="menu" alt="Dropdown menu button">
+                <li>
+                  <a href="libraries.html">Libraries</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="multimedia.html">Multimedia</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%">
+      <img style="width:100%" src="../images/airport-690556_1280.jpg" alt="airport">
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="">
+              <h1>Upcoming flights&nbsp;
+                <small>
+                  <div id="clockbox">
+                    <script type="text/javascript">
+                      var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                                              var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+                                              
+                                              function GetClock(){
+                                              var d=new Date();
+                                              var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+                                              
+                                              var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+                                              document.getElementById('clockbox').innerHTML=clocktext;
+                                              }
+                                              
+                                              GetClock();
+                                              setInterval(GetClock,1000);
+                    </script>
+                  </div>
+                </small>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Flight Number</th>
+                  <th>Starting Airport</th>
+                  <th>Arriving to</th>
+                  <th>Time of Flight</th>
+                  <th>Book Flight</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>3898</td>
+                  <td>KCI</td>
+                  <td>EWR</td>
+                  <td>5:50 A.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#kciewr">Book here!</a>
+                    <div class="modal fade" id="kciewr">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from KCI to EWR.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3966</td>
+                  <td>STL</td>
+                  <td>LAX</td>
+                  <td>7:00 A.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#stllax">Book here!</a>
+                    <div class="modal fade" id="stllax">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from STL to LAX.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail2">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">                                
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4568</td>
+                  <td>KCI</td>
+                  <td>LAX</td>
+                  <td>9:00 A.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#kcilax">Book here!</a>
+                    <div class="modal fade" id="kcilax">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from KCI to LAX.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail3">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4739</td>
+                  <td>DSM</td>
+                  <td>SLC</td>
+                  <td>11:00 A.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#dsmslc">Book here!</a>
+                    <div class="modal fade" id="dsmslc">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from DSM to SLC.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail4">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5789</td>
+                  <td>ORD</td>
+                  <td>DEN</td>
+                  <td>1:00 P.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#ordden">Book here!</a>
+                    <div class="modal fade" id="ordden">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from ORD to DEN.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail5">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6875</td>
+                  <td>ICT</td>
+                  <td>EWR</td>
+                  <td>3:00 P.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#ictewr">Book here!</a>
+                    <div class="modal fade" id="ictewr">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from ICT to EWR.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail6">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7390</td>
+                  <td>DSM</td>
+                  <td>DEN</td>
+                  <td>5:00 P.M.</td>
+                  <td>
+                    <a data-toggle="modal" href="#dsmden">Book here!</a>
+                    <div class="modal fade" id="dsmden">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="modal-title">Book a flight from DSM to DEN.</h3>
+                            <div>
+        <label><input type="radio" name="colorRadio" value="economy"> Economy </label>
+        <label><input type="radio" name="colorRadio"  value="business"> Business</label>
+        <label><input type="radio" name="colorRadio"  value="first"> First Class</label>
+    </div>
+    <div class="economy box">Total cost: 100.00 USD</div>
+    <div class="business box">Total cost: 150.50 USD</div>
+    <div class="first box">Total cost: 300.00 USD</div>
+                          </div>
+                          <div class="modal-body">
+                            <form role="form">
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email" name="email" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">First name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your first name" type="text" name="fname" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Last name</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your last name" name="lname" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">City</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the city you live in" name="city"type="text" required="required"/>
+                              </div>
+                                <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">State</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the state, region or province you live in" name="state"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Country</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the country you live in" name="country"type="text" required="required"/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your address" type="text" name="add" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Address 2</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Optional, enter an apartment or room number if applicable" name="add2" type="text">
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Credit or debit card number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter your credit or debit card number" name="debit" type="text" required/>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">CVV number</label>
+                                <input class="form-control" id="exampleInputPassword1" placeholder="Enter the 3-4 digit number on your credit or debit card." name="cvv"type="text" required="required"/>
+                              </div>
+                            </form>
+                            <form id="frmEmail7">
+                              <div class="input-group">
+                                <span class="">
+                                  <input type="submit" data-toggle="modal" data-target="#thankyoumodal" value="Submit">
+                                </span>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="thankyoumodal">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h2 class="modal-title text-center">Thank you for flying Parakeet!</h2>
+                          </div>
+                          <div class="modal-body">
+                            <p>If your payment was successful, you will be receiving an email in your inbox shortly with a receipt. If your payment was unsuccessful, you will be receiving an email letting you know.<br></p>
+                            <img src="../images/bluecheck.png" class="img-responsive center-block" width="200" height="200">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header">
+              <h1>Don't know which airport you'll be departing from?
+                <small>Check the map!</small>
+              </h1>
+              <div style="width: 100%">
+                <div style="width:100%" class="mapouter"><div style="width:100%; padding:5px;"class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=all%20international%20airports%20in%20usa&t=&z=3&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/coupons/"></a></div><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:600px;}</style></div>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1></h1>
+            <h1 style="color: rgb(0, 0, 0);">Parakeet Airways</h1>
+            <p>This website was developed for the FBLA Website Design
+               competition. Pixabay and Freepik, online resources with free-to-use
+              stock imagery, provided the photos for this site. This site was designed
+              using Pingendo and Adobe Dreamweaver.</p>
+          </div>
+          <div class="col-sm-6 text-center">
+            <div class="col-md-10">
+              <div class="col-md-10">
+                <div class="col-md-12">
+                  <div class="column"></div>
+                </div>
+              </div>
+            </div>
+            <p class="hidden-xs text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm hidden-xs text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center">
+            <img width="30" height="30" src="../images/facebook1.png" onmouseover="this.src='../images/facebook2.png'" onmouseout="this.src='../images/facebook1.png'" class="center-block hidden-lg hidden-md img-responsive" alt="Facebook">
+            <div class="col-md-10">
+              <div class="col-md-10">
+                <div class="col-md-12">
+                  <div class="hidden-sm hidden-xs row text-center">
+                    <div class="col-md-3">
+                      <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook1.png" onmouseover="this.src='../images/facebook2.png'" onmouseout="this.src='../images/facebook1.png'" class="img-responsive" alt="Facebook"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="https://www.instagram.com/" target="_blank"><img src="../images/insta1.png" onmouseover="this.src='../images/insta2.png'" onmouseout="this.src='../images/insta1.png'" class="center-block img-responsive" alt="Instagram"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="https://twitter.com/" target="_blank"><img src="../images/twitter1.png" onmouseover="this.src='../images/twitter2.png'" onmouseout="this.src='../images/twitter1.png'" class="img-responsive" alt="Twitter"></a>
+                    </div>
+                  </div>
+                  <div class="column"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm hidden-xs text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <img width="30" height="30" src="../images/insta1.png" onmouseover="this.src='../images/insta2.png'" onmouseout="this.src='../images/insta1.png'" class="center-block hidden-lg hidden-md img-responsive" alt="Instagram">
+            <img width="30" height="30" src="../images/twitter1.png" onmouseover="this.src='../images/twitter2.png'" onmouseout="this.src='../images/twitter1.png'" class="center-block hidden-lg hidden-md img-responsive" alt="Twitter">
+          </div>
+          <p class="hidden-xs text-info text-right">
+            <br>
+            <br>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="bigtext text-center">© Vivianne Purvis 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function() {
+                    //Preloader
+                    $(window).on("load", function() {
+                    preloaderFadeOutTime = 500;
+                    function hidePreloader() {
+                    var preloader = $('.se-pre-con-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                    }
+                    hidePreloader();
+                    });
+                    });
+    </script>
+    <script>
+      $('#frmEmail').submit(function() {
+            
+                // submission stuff
+            
+                $('#kciewr').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+      $('#frmEmail2').submit(function() {
+            
+                // submission stuff
+            
+                $('#stllax').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+      $('#frmEmail3').submit(function() {
+            
+                // submission stuff
+            
+                $('#kcilax').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+      $('#frmEmail4').submit(function() {
+            
+                // submission stuff
+            
+                $('#dsmslc').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+      $('#frmEmail5').submit(function() {
+            
+                // submission stuff
+            
+                $('#ordden').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+      $('#frmEmail6').submit(function() {
+            
+                // submission stuff
+            
+                $('#ictewr').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+      $('#frmEmail7').submit(function() {
+            
+                // submission stuff
+            
+                $('#dsmden').modal('hide');
+                return false;
+            });
+    </script>
+    <script>
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
+<script>
+var inp = document.getElementsByTagName('input');
+for (var i = inp.length-1; i>=0; i--) {
+if ('radio'===inp[i].type) inp[i].checked = false;
+}</script>
+<script>
+      new WOW().init();
+    </script>
+</body></html>

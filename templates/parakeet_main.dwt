@@ -1,0 +1,168 @@
+<html><head>
+    <title>Parakeet Airways – About Us</title>
+    <link rel="icon" href="../images/tinypara.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+    <script src="../javascript/animate-in.js"></script>
+    <link href="../font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../coolcss.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../coolcss.css">
+    <link rel="stylesheet" href="../animate.css">
+    <script src="../javascript/wow.min.js"></script>
+  </head><body>
+    <script>
+      new WOW().init();
+    </script>
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar-ex-collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html"><img height="25" alt="Brand" src="../images/parakeetbanner.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right navvy">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us<img src="../images/dropdown.png" width="10" height="10"></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="aboutus.html">About Us</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="why.html">Why Parakeet?</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Flights<img src="../images/dropdown.png" width="10" height="10"></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Schedule</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Booking</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Frequent Flyers</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Jobs</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Documentation<img src="../images/dropdown.png" width="10" height="10"></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Javascript Libraries</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Multimedia</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </div>
+<footer class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1></h1>
+            <h1 style="color: rgb(0, 0, 0);">Parakeet Airways</h1>
+            <p>This website was developed for the purposes of the 2019 Website Design
+              FBLA competition. Pixabay and Freepik, online resources with free-to-use
+              stock imagery, provided the photos for this site. This site was designed
+              using Pingendo and Adobe Dreamweaver.</p>
+          </div>
+          <div class="col-sm-6 text-center">
+            <div class="col-md-10">
+              <div class="col-md-10">
+                <div class="col-md-12">
+                  <div class="column"></div>
+                </div>
+              </div>
+            </div>
+            <p class="hidden-xs text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm hidden-xs text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center">
+            <img width="30" height="30" src="../images/facebook1.png" onmouseover="this.src='../images/facebook2.png'" onmouseout="this.src='../images/facebook1.png'" class="center-block hidden-lg hidden-md img-responsive">
+            <div class="col-md-10">
+              <div class="col-md-10">
+                <div class="col-md-12">
+                  <div class="hidden-sm hidden-xs row text-center">
+                    <div class="col-md-3">
+                      <a href="#"><img src="../images/facebook1.png" onmouseover="this.src='../images/facebook2.png'" onmouseout="this.src='../images/facebook1.png'" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#"><img src="../images/insta1.png" onmouseover="this.src='../images/insta2.png'" onmouseout="this.src='../images/insta1.png'" class="center-block img-responsive"></a>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="#"><img src="../images/twitter1.png" onmouseover="this.src='../images/twitter2.png'" onmouseout="this.src='../images/twitter1.png'" class="img-responsive"></a>
+                    </div>
+                  </div>
+                  <div class="column"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm hidden-xs text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <img width="30" height="30" src="../images/insta1.png" onmouseover="this.src='../images/insta2.png'" onmouseout="this.src='../images/insta1.png'" class="center-block hidden-lg hidden-md img-responsive">
+            <img width="30" height="30" src="../images/twitter1.png" onmouseover="this.src='../images/twitter2.png'" onmouseout="this.src='../images/twitter1.png'" class="center-block hidden-lg hidden-md img-responsive">
+          </div>
+          <p class="hidden-xs text-info text-right">
+            <br>
+            <br>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="bigtext text-center">© Vivianne Purvis 2019</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body></html>
